@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KNOTS - Reveal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary": "#a13f23",
+                        "secondary-fixed-dim": "#ffb5a1",
+                        "secondary-fixed": "#ffdbd1",
+                        "surface-container": "#f1eee3",
+                        "on-surface": "#1c1c15",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#fcf9ee",
+                        "primary-fixed": "#ffdcbc",
+                        "primary-fixed-dim": "#ffb86c",
+                        "inverse-primary": "#ffb86c",
+                        "inverse-on-surface": "#f4f1e6",
+                        "surface-container-highest": "#e5e2d8",
+                        "primary": "#895100",
+                        "on-primary-fixed": "#2c1600",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#d8c3b1",
+                        "tertiary-fixed-dim": "#9ecfd6",
+                        "secondary-container": "#ff8665",
+                        "on-primary-fixed-variant": "#683c00",
+                        "surface-variant": "#e5e2d8",
+                        "surface-container-high": "#ebe8dd",
+                        "on-tertiary-fixed": "#001f23",
+                        "surface-container-low": "#f7f4e9",
+                        "surface-dim": "#dddacf",
+                        "surface": "#fcf9ee",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#3b0900",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#36656c",
+                        "on-tertiary-fixed-variant": "#1b4d53",
+                        "on-secondary-fixed-variant": "#81280e",
+                        "inverse-surface": "#31312a",
+                        "on-primary-container": "#4f2c00",
+                        "tertiary-container": "#76a5ac",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#895100",
+                        "on-background": "#1c1c15",
+                        "on-tertiary-container": "#003b41",
+                        "on-secondary-container": "#741f05",
+                        "primary-container": "#d98c2f",
+                        "background": "#fcf9ee",
+                        "tertiary-fixed": "#baebf2",
+                        "outline": "#857464",
+                        "on-surface-variant": "#534436",
+                        "surface-container-lowest": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fcf9ee;
+            color: #1c1c15;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #1c1c15;
+        }
+        .neo-shadow-sm {
+            box-shadow: 2px 2px 0px 0px #1c1c15;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center">
+<!-- TopAppBar -->
+<nav class="bg-[#D98C2F] text-[#1c1c15] font-['Plus_Jakarta_Sans'] font-extrabold uppercase tracking-[0.05em] text-xl docked full-width top-0 border-b-3 border-[#1c1c15] flex justify-between items-center w-full px-6 h-16 fixed z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined active:translate-y-0.5 transition-transform cursor-pointer" data-icon="grid_view">grid_view</span>
+<span class="font-extrabold uppercase tracking-widest text-[#1c1c15]">KNOTS</span>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined active:translate-y-0.5 transition-transform cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="flex-1 w-full max-w-2xl px-6 pt-24 pb-32 flex flex-col gap-8">
+<!-- Success Header -->
+<header class="text-center">
+<div class="inline-block bg-tertiary text-on-tertiary px-4 py-1 border-2 border-on-background font-bold uppercase tracking-widest mb-4">
+                PUZZLE SOLVED
+            </div>
+<h1 class="text-4xl md:text-5xl font-extrabold uppercase tracking-tighter leading-none mb-2">REVEALED</h1>
+</header>
+<!-- Main Content Card -->
+<section class="bg-surface border-3 border-on-background p-8 neo-shadow relative overflow-hidden">
+<!-- Decorative corner accent -->
+<div class="absolute top-0 right-0 w-12 h-12 bg-secondary border-b-3 border-l-3 border-on-background"></div>
+<div class="space-y-6">
+<p class="text-label-sm font-bold text-outline uppercase tracking-widest">DECODED MESSAGE</p>
+<div class="border-l-4 border-primary pl-6">
+<p class="text-2xl md:text-3xl font-bold italic text-on-surface leading-tight">
+                        "I can't wait to see you this weekend!"
+                    </p>
+</div>
+</div>
+</section>
+<!-- Stats Grid -->
+<section class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container border-2 border-on-background p-4 flex flex-col items-center justify-center">
+<span class="text-label-sm font-bold text-outline uppercase">TIME</span>
+<span class="text-3xl font-extrabold">01:24</span>
+</div>
+<div class="bg-surface-container border-2 border-on-background p-4 flex flex-col items-center justify-center">
+<span class="text-label-sm font-bold text-outline uppercase">MISTAKES</span>
+<span class="text-3xl font-extrabold text-secondary">1</span>
+</div>
+</section>
+<!-- Reaction Section -->
+<section class="space-y-4">
+<h2 class="text-sm font-bold uppercase tracking-widest text-center">How did this feel?</h2>
+<div class="flex justify-between gap-2">
+<button class="flex-1 bg-surface border-2 border-on-background py-3 neo-shadow-sm active:translate-y-0.5 active:shadow-none transition-all hover:bg-surface-container-high">
+<span class="text-2xl">🔥</span>
+</button>
+<button class="flex-1 bg-surface border-2 border-on-background py-3 neo-shadow-sm active:translate-y-0.5 active:shadow-none transition-all hover:bg-surface-container-high">
+<span class="text-2xl">💡</span>
+</button>
+<button class="flex-1 bg-surface border-2 border-on-background py-3 neo-shadow-sm active:translate-y-0.5 active:shadow-none transition-all hover:bg-surface-container-high">
+<span class="text-2xl">🤯</span>
+</button>
+<button class="flex-1 bg-surface border-2 border-on-background py-3 neo-shadow-sm active:translate-y-0.5 active:shadow-none transition-all hover:bg-surface-container-high">
+<span class="text-2xl">💖</span>
+</button>
+</div>
+</section>
+<!-- CTA Buttons -->
+<section class="flex flex-col gap-4">
+<button class="w-full bg-primary text-on-primary font-extrabold uppercase py-5 border-3 border-on-background neo-shadow active:translate-y-1 active:shadow-none transition-all text-xl tracking-widest">
+                NEXT PUZZLE
+            </button>
+<button class="w-full bg-surface border-2 border-on-background py-4 font-bold uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="share">share</span>
+                SHARE RESULTS
+            </button>
+</section>
+</main>
+<!-- BottomNavBar (Filtered based on Contextual Rules - In a reveal screen, we keep it as it's a top-level summary) -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-stretch bg-[#fcf9ee] border-t-3 border-[#1c1c15] z-50">
+<div class="flex flex-col items-center justify-center text-[#857464] h-full w-full border-r-2 border-[#1c1c15] hover:bg-[#f7f4e9] active:scale-95 transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter">INBOX</span>
+</div>
+<!-- ACTIVE TAB: SOLVE -->
+<div class="flex flex-col items-center justify-center bg-[#D98C2F] text-[#1c1c15] h-full w-full border-r-2 border-[#1c1c15] active:scale-95 transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="extension">extension</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter text-[#1c1c15]">SOLVE</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#857464] h-full w-full border-r-2 border-[#1c1c15] hover:bg-[#f7f4e9] active:scale-95 transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="edit_square">edit_square</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter">CREATE</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#857464] h-full w-full hover:bg-[#f7f4e9] active:scale-95 transition-all cursor-pointer">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter">VAULT</span>
+</div>
+</nav>
+</body></html>

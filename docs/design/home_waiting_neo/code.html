@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#a13f23",
+              "secondary-fixed-dim": "#ffb5a1",
+              "secondary-fixed": "#ffdbd1",
+              "surface-container": "#f1eee3",
+              "on-surface": "#1c1c15",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "surface-bright": "#fcf9ee",
+              "primary-fixed": "#ffdcbc",
+              "primary-fixed-dim": "#ffb86c",
+              "inverse-primary": "#ffb86c",
+              "inverse-on-surface": "#f4f1e6",
+              "surface-container-highest": "#e5e2d8",
+              "primary": "#895100",
+              "on-primary-fixed": "#2c1600",
+              "on-secondary": "#ffffff",
+              "on-primary": "#ffffff",
+              "outline-variant": "#d8c3b1",
+              "tertiary-fixed-dim": "#9ecfd6",
+              "secondary-container": "#ff8665",
+              "on-primary-fixed-variant": "#683c00",
+              "surface-variant": "#e5e2d8",
+              "surface-container-high": "#ebe8dd",
+              "on-tertiary-fixed": "#001f23",
+              "surface-container-low": "#f7f4e9",
+              "surface-dim": "#dddacf",
+              "surface": "#fcf9ee",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#3b0900",
+              "on-tertiary": "#ffffff",
+              "tertiary": "#36656c",
+              "on-tertiary-fixed-variant": "#1b4d53",
+              "on-secondary-fixed-variant": "#81280e",
+              "inverse-surface": "#31312a",
+              "on-primary-container": "#4f2c00",
+              "tertiary-container": "#76a5ac",
+              "on-error": "#ffffff",
+              "surface-tint": "#895100",
+              "on-background": "#1c1c15",
+              "on-tertiary-container": "#003b41",
+              "on-secondary-container": "#741f05",
+              "primary-container": "#d98c2f",
+              "background": "#fcf9ee",
+              "tertiary-fixed": "#baebf2",
+              "outline": "#857464",
+              "on-surface-variant": "#534436",
+              "surface-container-lowest": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Plus Jakarta Sans"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px #1c1c15;
+        }
+        .neo-shadow-sm {
+            box-shadow: 2px 2px 0px 0px #1c1c15;
+        }
+        body {
+            background-color: #fcf9ee;
+            color: #1c1c15;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="bg-[#D98C2F] dark:bg-[#895100] border-b-3 border-[#1c1c15] flex justify-between items-center w-full px-6 h-16 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<button class="active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined text-[#1c1c15] text-2xl">grid_view</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-extrabold uppercase tracking-[0.05em] text-xl text-[#1c1c15]">KNOTS</h1>
+</div>
+<button class="active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined text-[#1c1c15] text-3xl">account_circle</span>
+</button>
+</header>
+<main class="p-6 space-y-8 max-w-2xl mx-auto">
+<!-- Welcome Header -->
+<section class="space-y-1">
+<p class="font-bold text-sm tracking-widest text-outline uppercase">WEDNESDAY, OCT 25</p>
+<h2 class="text-4xl font-extrabold uppercase tracking-tight">MORNING, ALEX</h2>
+</section>
+<!-- Main Challenge Card (Terracotta) -->
+<div class="bg-secondary-container border-3 border-on-background neo-shadow relative overflow-hidden">
+<!-- Decorative Pattern -->
+<div class="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none translate-x-12 -translate-y-12">
+<span class="material-symbols-outlined text-9xl">extension</span>
+</div>
+<div class="p-6 space-y-6 relative z-10">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<span class="bg-on-background text-surface text-[10px] font-bold px-2 py-0.5 uppercase tracking-tighter">NEW INCOMING</span>
+<h3 class="text-2xl font-extrabold uppercase leading-tight max-w-[200px]">JAMIE HAS SENT A PUZZLE</h3>
+</div>
+<div class="w-16 h-16 border-3 border-on-background bg-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a young man with a friendly expression and short dark hair against a minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0NXyK2jZ-nPaJ0tDK3pxoGaZbBTdfD7uno3tFjaPBg1OLh4E2R91PuFpBQCD3MtcWObmxrda-YNkCm8DJ5ijkBdr77PGC0tePNvm6HCJuNSY4FjvAj-gVGA3lwDsklCUvAfOEv3tlc1LCZFyHhPt_nPivpW0xqNy3HM5ZctAFplxVmGyM4BJfufEq_LOz4Oq4t6rRqWDLN3gQUaNdUS9mhttqESqcOmlNzrwY1xP5u8JOYK-6xk7sWAKtePEO-swDwwCZFNiJqTo"/>
+</div>
+</div>
+<!-- Puzzle Details Bento -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface border-3 border-on-background p-3 flex flex-col justify-between">
+<span class="text-[10px] font-bold text-outline uppercase tracking-widest">TYPE</span>
+<p class="font-extrabold text-lg uppercase">CONNECTIONS</p>
+</div>
+<div class="bg-surface border-3 border-on-background p-3 flex flex-col justify-between">
+<span class="text-[10px] font-bold text-outline uppercase tracking-widest">DIFFICULTY</span>
+<p class="font-extrabold text-lg uppercase text-secondary">MEDIUM</p>
+</div>
+</div>
+<!-- Big Teal Play Button -->
+<button class="w-full bg-tertiary py-5 border-3 border-on-background neo-shadow-sm active:translate-x-0.5 active:translate-y-0.5 active:shadow-none transition-all flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-white font-bold" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span class="text-white font-extrabold text-2xl uppercase tracking-widest">PLAY</span>
+</button>
+</div>
+</div>
+<!-- Secondary Section: Stats & History -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Streak Counter -->
+<div class="bg-surface-container border-3 border-on-background p-4 neo-shadow-sm flex flex-col items-center justify-center text-center space-y-2">
+<span class="text-[10px] font-bold text-outline uppercase tracking-widest">YOUR STREAK</span>
+<div class="flex items-center gap-2">
+<span class="text-3xl">🔥</span>
+<span class="text-4xl font-extrabold">12 DAYS</span>
+</div>
+</div>
+<!-- Vault Card -->
+<div class="bg-surface-container-highest border-3 border-on-background p-4 neo-shadow-sm flex flex-col justify-between">
+<span class="material-symbols-outlined text-on-background" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<div class="mt-4">
+<p class="font-extrabold text-sm uppercase">VAULT</p>
+<p class="text-[10px] font-bold text-outline uppercase">4 UNFINISHED</p>
+</div>
+</div>
+</div>
+<!-- Recent Activity List -->
+<section class="space-y-4 pt-4">
+<div class="flex justify-between items-end">
+<h4 class="font-extrabold text-lg uppercase tracking-tight">RECENT SOLVES</h4>
+<button class="text-[10px] font-bold uppercase underline decoration-2 decoration-secondary">VIEW ALL</button>
+</div>
+<div class="space-y-0 border-t-3 border-on-background">
+<!-- Activity Item 1 -->
+<div class="flex items-center justify-between py-4 border-b-2 border-outline/30 px-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 border-2 border-on-background bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container text-xl">extension</span>
+</div>
+<div>
+<p class="font-bold text-sm uppercase">THE GRID #442</p>
+<p class="text-[10px] font-bold text-outline uppercase tracking-tighter">SUCCESS • 04:22</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface">chevron_right</span>
+</div>
+<!-- Activity Item 2 -->
+<div class="flex items-center justify-between py-4 border-b-2 border-outline/30 px-2 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 border-2 border-on-background bg-secondary-fixed-dim flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-fixed-variant text-xl">grid_4x4</span>
+</div>
+<div>
+<p class="font-bold text-sm uppercase">CROSS-KNOT #12</p>
+<p class="text-[10px] font-bold text-outline uppercase tracking-tighter">SUCCESS • 12:05</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface">chevron_right</span>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 flex justify-around items-stretch bg-[#fcf9ee] dark:bg-[#1c1c15] border-t-3 border-[#1c1c15] z-50">
+<a class="flex flex-col items-center justify-center text-[#857464] h-full w-full border-r-2 border-[#1c1c15] hover:bg-[#f7f4e9] active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">mail</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter">INBOX</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#D98C2F] text-[#1c1c15] h-full w-full border-r-2 border-[#1c1c15] active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">extension</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter">SOLVE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#857464] h-full w-full border-r-2 border-[#1c1c15] hover:bg-[#f7f4e9] active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">edit_square</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter">CREATE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#857464] h-full w-full hover:bg-[#f7f4e9] active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined mb-1">inventory_2</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold uppercase text-[10px] tracking-tighter">VAULT</span>
+</a>
+</nav>
+</body></html>

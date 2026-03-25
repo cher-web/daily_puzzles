@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fcf9ee;
+            color: #1c1c15;
+            margin: 0;
+            padding: 0;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for Neo-Brutalist feel */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fcf9ee;
+            border-left: 3px solid #1c1c15;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #895100;
+            border: 3px solid #1c1c15;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary-container": "#4f2c00",
+                        "inverse-on-surface": "#f4f1e6",
+                        "secondary-fixed-dim": "#ffb5a1",
+                        "primary": "#895100",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#534436",
+                        "secondary-container": "#ff8665",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#001f23",
+                        "surface-bright": "#fcf9ee",
+                        "primary-fixed": "#ffdcbc",
+                        "outline-variant": "#d8c3b1",
+                        "on-tertiary-fixed-variant": "#1b4d53",
+                        "on-primary-fixed-variant": "#683c00",
+                        "background": "#fcf9ee",
+                        "secondary-fixed": "#ffdbd1",
+                        "on-secondary-container": "#741f05",
+                        "surface": "#fcf9ee",
+                        "on-background": "#1c1c15",
+                        "surface-tint": "#895100",
+                        "surface-variant": "#e5e2d8",
+                        "error": "#ba1a1a",
+                        "tertiary": "#36656c",
+                        "surface-container-high": "#ebe8dd",
+                        "surface-container": "#f1eee3",
+                        "on-primary-fixed": "#2c1600",
+                        "on-secondary-fixed": "#3b0900",
+                        "secondary": "#a13f23",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dddacf",
+                        "inverse-surface": "#31312a",
+                        "tertiary-fixed": "#baebf2",
+                        "primary-container": "#d98c2f",
+                        "on-secondary-fixed-variant": "#81280e",
+                        "surface-container-low": "#f7f4e9",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#9ecfd6",
+                        "surface-container-highest": "#e5e2d8",
+                        "on-tertiary-container": "#003b41",
+                        "on-surface": "#1c1c15",
+                        "tertiary-container": "#76a5ac",
+                        "outline": "#857464",
+                        "on-tertiary": "#ffffff",
+                        "inverse-primary": "#ffb86c",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb86c"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-[#D98C2F] dark:bg-[#895100] border-b-[3px] border-[#1c1c15]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#1c1c15] dark:text-[#fcf9ee]" data-icon="grid_view">grid_view</span>
+<h1 class="font-['Plus_Jakarta_Sans'] font-[900] uppercase tracking-[0.05em] text-2xl text-[#1c1c15] dark:text-[#fcf9ee]">PUZZLE MSG</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 border-[2px] border-[#1c1c15] flex items-center justify-center hover:bg-[#895100] dark:hover:bg-[#D98C2F] transition-colors active:translate-y-[2px]">
+<span class="material-symbols-outlined text-[#1c1c15] dark:text-[#fcf9ee]" data-icon="person">person</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-32 px-6 max-w-4xl mx-auto min-h-screen">
+<!-- Success Banner/Status -->
+<div class="mb-8 flex flex-col md:flex-row gap-4 items-stretch">
+<div class="flex-1 bg-secondary p-6 border-[3px] border-on-background shadow-[4px_4px_0px_0px_#1c1c15]">
+<p class="font-label font-bold uppercase text-xs text-on-secondary mb-1 tracking-widest">STATUS</p>
+<h2 class="font-headline font-black uppercase text-4xl text-on-secondary italic leading-none">PUZZLE SOLVED</h2>
+</div>
+<div class="flex-none bg-tertiary p-6 border-[3px] border-on-background shadow-[4px_4px_0px_0px_#1c1c15] flex flex-col justify-center items-center px-10">
+<p class="font-label font-bold uppercase text-xs text-on-tertiary mb-1">STREAK</p>
+<p class="font-headline font-black text-3xl text-on-tertiary">14</p>
+</div>
+</div>
+<!-- The Revealed Message Card -->
+<section class="relative mb-12">
+<div class="absolute -top-4 -left-4 bg-primary px-4 py-2 border-[3px] border-on-background z-10 shadow-[4px_4px_0px_0px_#1c1c15]">
+<span class="font-label font-black uppercase text-on-primary text-sm tracking-tighter">THE MESSAGE</span>
+</div>
+<div class="bg-surface border-[3px] border-on-background p-10 md:p-16 text-center shadow-[8px_8px_0px_0px_#1c1c15]">
+<blockquote class="font-headline font-black uppercase text-4xl md:text-6xl leading-[1.1] text-on-background break-words">
+                    CREATIVITY IS THE GREATEST REBELLION IN EXISTENCE.
+                </blockquote>
+<div class="mt-8 pt-8 border-t-[3px] border-on-background/10 inline-block w-full">
+<p class="font-label font-bold text-outline uppercase tracking-widest text-sm">— REVEALED FROM ENCRYPTED VAULT #802</p>
+</div>
+</div>
+</section>
+<!-- Stats Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+<!-- Time Box -->
+<div class="bg-surface-container border-[3px] border-on-background p-4 shadow-[4px_4px_0px_0px_#1c1c15]">
+<div class="flex items-center gap-2 mb-2 text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="schedule">schedule</span>
+<span class="font-label font-bold uppercase text-[10px] tracking-widest">TIME</span>
+</div>
+<p class="font-headline font-black text-2xl">04:12</p>
+</div>
+<!-- Mistakes Box -->
+<div class="bg-surface-container border-[3px] border-on-background p-4 shadow-[4px_4px_0px_0px_#1c1c15]">
+<div class="flex items-center gap-2 mb-2 text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="error">error</span>
+<span class="font-label font-bold uppercase text-[10px] tracking-widest">MISTAKES</span>
+</div>
+<p class="font-headline font-black text-2xl text-secondary">02</p>
+</div>
+<!-- Accuracy Box -->
+<div class="bg-surface-container border-[3px] border-on-background p-4 shadow-[4px_4px_0px_0px_#1c1c15]">
+<div class="flex items-center gap-2 mb-2 text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="target">target</span>
+<span class="font-label font-bold uppercase text-[10px] tracking-widest">ACCURACY</span>
+</div>
+<p class="font-headline font-black text-2xl">94%</p>
+</div>
+<!-- Global Rank Box -->
+<div class="bg-surface-container border-[3px] border-on-background p-4 shadow-[4px_4px_0px_0px_#1c1c15]">
+<div class="flex items-center gap-2 mb-2 text-outline">
+<span class="material-symbols-outlined text-sm" data-icon="leaderboard">leaderboard</span>
+<span class="font-label font-bold uppercase text-[10px] tracking-widest">RANK</span>
+</div>
+<p class="font-headline font-black text-2xl">#122</p>
+</div>
+</div>
+<!-- Reaction Section -->
+<div class="bg-surface-container-highest border-[3px] border-on-background p-8 mb-12">
+<h3 class="font-label font-black uppercase text-sm mb-6 tracking-widest text-center">REACT TO MESSAGE</h3>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="w-16 h-16 bg-surface border-[3px] border-on-background flex items-center justify-center text-3xl shadow-[4px_4px_0px_0px_#1c1c15] hover:bg-primary-container transition-all active:translate-y-[2px] active:shadow-none">🔥</button>
+<button class="w-16 h-16 bg-surface border-[3px] border-on-background flex items-center justify-center text-3xl shadow-[4px_4px_0px_0px_#1c1c15] hover:bg-primary-container transition-all active:translate-y-[2px] active:shadow-none">🤯</button>
+<button class="w-16 h-16 bg-surface border-[3px] border-on-background flex items-center justify-center text-3xl shadow-[4px_4px_0px_0px_#1c1c15] hover:bg-primary-container transition-all active:translate-y-[2px] active:shadow-none">💯</button>
+<button class="w-16 h-16 bg-surface border-[3px] border-on-background flex items-center justify-center text-3xl shadow-[4px_4px_0px_0px_#1c1c15] hover:bg-primary-container transition-all active:translate-y-[2px] active:shadow-none">🖤</button>
+<button class="w-16 h-16 bg-surface border-[3px] border-on-background flex items-center justify-center text-3xl shadow-[4px_4px_0px_0px_#1c1c15] hover:bg-primary-container transition-all active:translate-y-[2px] active:shadow-none">✨</button>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col md:flex-row gap-6">
+<button class="flex-1 bg-primary text-on-primary border-[3px] border-on-background p-6 font-headline font-black uppercase text-xl shadow-[6px_6px_0px_0px_#1c1c15] hover:bg-primary-container transition-all active:translate-y-[2px] active:shadow-none flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+                SHARE REVEAL
+            </button>
+<button class="flex-1 bg-surface text-on-background border-[3px] border-on-background p-6 font-headline font-black uppercase text-xl shadow-[6px_6px_0px_0px_#1c1c15] hover:bg-surface-container transition-all active:translate-y-[2px] active:shadow-none flex items-center justify-center gap-3">
+<span class="material-symbols-outlined" data-icon="play_arrow">play_arrow</span>
+                NEXT PUZZLE
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 h-20 flex justify-around items-stretch overflow-hidden bg-[#fcf9ee] dark:bg-[#1c1c15] border-t-[3px] border-[#1c1c15] shadow-[4px_4px_0px_0px_#1c1c15]">
+<a class="flex flex-col items-center justify-center text-[#1c1c15] dark:text-[#fcf9ee] h-full w-full border-r-[2px] border-[#1c1c15] hover:bg-[#f1eee3] dark:hover:bg-[#857464]" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<span class="font-['Plus_Jakarta_Sans'] font-[700] uppercase tracking-[0.05em] text-[10px]">Inbox</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#D98C2F] text-[#1c1c15] h-full w-full border-x-[1px] border-[#1c1c15] scale-95 transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="extension">extension</span>
+<span class="font-['Plus_Jakarta_Sans'] font-[700] uppercase tracking-[0.05em] text-[10px]">Solve</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c15] dark:text-[#fcf9ee] h-full w-full border-r-[2px] border-[#1c1c15] hover:bg-[#f1eee3] dark:hover:bg-[#857464]" href="#">
+<span class="material-symbols-outlined" data-icon="edit_square">edit_square</span>
+<span class="font-['Plus_Jakarta_Sans'] font-[700] uppercase tracking-[0.05em] text-[10px]">Create</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1c1c15] dark:text-[#fcf9ee] h-full w-full hover:bg-[#f1eee3] dark:hover:bg-[#857464]" href="#">
+<span class="material-symbols-outlined" data-icon="lock">lock</span>
+<span class="font-['Plus_Jakarta_Sans'] font-[700] uppercase tracking-[0.05em] text-[10px]">Vault</span>
+</a>
+</nav>
+</body></html>
